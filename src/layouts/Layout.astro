@@ -1,6 +1,9 @@
 ---
 import Header from '../components/Header.astro';
 import Home from '../components/Home.astro';
+import Summary from '../components/Summary.astro';
+import Location from '../components/Location.astro';
+
 interface Props {
 	title: string;
 }
@@ -19,8 +22,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header />
+		<!-- <Header /> -->
 		<Home />
+		<Summary />
+		<Location />
 		<slot />
 	</body>
 </html>
@@ -35,6 +40,6 @@ const { title } = Astro.props;
 	body {
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		height: auto;
 	}
 </style>
