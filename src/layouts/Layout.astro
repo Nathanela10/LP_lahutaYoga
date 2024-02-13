@@ -4,6 +4,7 @@ import Home from '../components/Home.astro';
 import Summary from '../components/Summary.astro';
 import Location from '../components/Location.astro';
 import Experiences from '../components/Experiences.astro';
+import Place from '../components/Place.astro';
 
 interface Props {
   title: string;
@@ -28,6 +29,7 @@ const { title } = Astro.props;
     <Summary />
     <Location />
     <Experiences />
+		<Place />
     <slot />
   </body>
 </html>
