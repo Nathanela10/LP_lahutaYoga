@@ -5,6 +5,7 @@ import Summary from '../components/Summary.astro';
 import Location from '../components/Location.astro';
 import Experiences from '../components/Experiences.astro';
 import Place from '../components/Place.astro';
+import Slider from '../components/Slider.astro';
 
 interface Props {
   title: string;
@@ -30,6 +31,7 @@ const { title } = Astro.props;
     <Location />
     <Experiences />
 		<Place />
+    <Slider />
     <slot />
   </body>
 </html>
