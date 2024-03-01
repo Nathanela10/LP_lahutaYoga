@@ -1,14 +1,47 @@
+---
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+---
+
 <div>
-  <div class="h-64 py-8 text-center">
-    <h1 class="font-bold uppercase text-3xl py-4">El lugar que nos acogerá</h1>
-    <p class="text-xl py-2">
+  <div class='h-64 py-8 text-center'>
+    <h1 class='font-bold uppercase text-3xl py-4'>El lugar que nos acogerá</h1>
+    <p class='text-xl py-2'>
       Nos hospedaremos en el <b>HOSTAL LA MARIÁPOLIS</b>, un lugar cálido y
       hermoso, rodeado de playa y naturaleza, silencio y lleno de paz, ideal
       para el descanso y la desconexión.
     </p>
-    <p class="text-xl py-2">
+    <p class='text-xl py-2'>
       El <b>HOSTAL LA MARIÁPOLIS</b> se encuentra en el municipio de Necoclí - Antioquia
       a 7 horas de Medellín.
     </p>
+  </div><div class='swiper-container'>
+    <div class='swiper-wrapper'>
+      <div class='swiper-slide'>
+        <img src='src/assets/icons/alimentacion.webp' class='w-32 h-32 object-cover' />
+      </div>
+      <div class='swiper-slide'>
+        <img src='src/assets/icons/bosqueterapia.webp' class='w-32 h-32 object-cover' />
+      </div>
+      <!-- Agrega más slides según sea necesario -->
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class='swiper-button-next'></div>
+    <div class='swiper-button-prev'></div>
   </div>
 </div>
+
+<script>
+  window.addEventListener('load', function () {
+    new Swiper('.swiper-container', {
+      // Opciones de Swiper
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
