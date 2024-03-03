@@ -9,6 +9,7 @@ import Slider from '../components/Slider.astro';
 import Booking from '../components/Booking.astro';
 import Benefits from '../components/Benefits.astro';
 import Pay from '../components/Pay.astro';
+import ProfileDunia from '../components/Profile.astro';
 
 interface Props {
   title: string;
@@ -38,6 +39,7 @@ const { title } = Astro.props;
     <Booking />
     <Benefits />
     <Pay />
+    <ProfileDunia />
     <slot />
   </body>
 </html>
